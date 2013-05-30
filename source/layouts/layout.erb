@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="ru"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru"> <!--<![endif]-->
+
+  <head>
+  	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= data.page.title || "The Middleman" %></title>
+
+    <%= stylesheet_link_tag "normalize", "app", "style" %>
+    <%= javascript_include_tag "vendor/custom.modernizr" %>
+    <%= javascript_include_tag "vendor/jquery" %>
+  </head>
+
+  <body class="<%= page_classes %>">
+    <%= yield %>
+    <%= javascript_include_tag  "all" %>
+  </body>
+</html>
