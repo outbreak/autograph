@@ -11,7 +11,7 @@
 @import "foundation/components/global"; // *always required
 @import "foundation/components/grid";
 // @import "foundation/components/visibility";
-// @import "foundation/components/block-grid";
+@import "foundation/components/block-grid";
 @import "foundation/components/type";
 @import "foundation/components/buttons";
 @import "foundation/components/forms"; // *requires components/buttons
@@ -32,7 +32,7 @@
 // @import "foundation/components/labels";
 @import "foundation/components/inline-lists";
 // @import "foundation/components/pagination";
-// @import "foundation/components/panels";
+@import "foundation/components/panels";
 // @import "foundation/components/pricing-tables";
 // @import "foundation/components/progress-bars";
 // @import "foundation/components/side-nav";
@@ -52,12 +52,31 @@
   padding: emCalc(30px) 0;
 }
 
-#products, #contacts {
+.page-block {
   padding: emCalc(40px) 0;
 }
 
-#contacts {
+.grey {
   background-color: #f3f3f3;
+}
+
+ul.domovoy-menu {
+  a {
+    min-height: emCalc(60px);
+    vertical-align: middle;
+  }
+}
+
+.panel.callout {
+  dl {
+    color: white;
+  }
+}
+a.th {
+  margin-bottom: emCalc(20px);
+}
+table {
+  width: 100%;
 }
 
 ul.vcard {
