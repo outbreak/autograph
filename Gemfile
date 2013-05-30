@@ -5,4 +5,4 @@ source 'http://rubygems.org'
 gem "middleman", "~>3.0.12"
 gem "zurb-foundation", "~>4.0.3"
 gem "middleman-livereload"
-gem "middleman-gh-pages"
+gem "middleman-deploy"
